@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#list-section {
+    margin-bottom: 100px;
+}
+
 .list-headline {
+    font-family: "Circular Std Bold", sans-serif;
     padding: 100px 0 30px;
 }
 
 .container {
     padding: 0 70px;
-    margin: 0 368.938px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -39,25 +48,38 @@ h3 {
     margin-top: 50px;
     max-height: 529.33px;
     max-width: 361.33px;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.item:hover {
+    transition: border 0.6s;
+    border: 1px solid #bbb;
+    
 }
 
 .image img {
     height: 301.33px;
 }
 
+
 .item-name-and-weight {
+    font-family: "Casper", sans-serif;
     margin-top: 30px;
      display: flex;
 }
 
 .item-name {
-    font-size: 20px;
+    color: #222;
+    opacity: 0.9;
+    font-size: 17px;
+    letter-spacing: 0.5px;
     font-weight: bold;
     max-height: 46px;
     max-width: 224.98px;    
 }   
 
 .item-weight {
+    color: #000;;
     font-size: 14px;
     padding-left: 20px;
     margin-top: 5px;
@@ -71,26 +93,51 @@ h3 {
 .learn-more {
     padding: 19px 44px 19px 21px;
     border: 1px solid #bbb;
+    max-height: 54px;
+    max-width: 150.98px;
+}
+
+.learn-more:hover {
+        border: 1px solid #000;
+}
+
+.learn-more p {
+    font-family: "Circular Std Bold", sans-serif;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 0.85px;
     line-height: 14px;
     text-decoration: underline; 
+    color: #525252;
 }
 
 .in-shop {
     display: flex;
     align-items: center;
     margin-left: 70px;
+    opacity: 1;
 }
 
+.in-shop:hover
+{
+    opacity: 0.8;
+    }
+
 .in-shop img {
-    height: 23px;
+    height: 22px;
     margin-right: 7px;
 }
 
 .in-shop p {
-    font-size: 12px;
+    color: #7a7a81;
+    font-size: 11px;
     text-decoration: underline;
     letter-spacing: 0.55px;
 }
+
+
+
+/* #other-series-section {
+    padding: 100px 0;
+    background-color: #F2F2F2;
+} */
