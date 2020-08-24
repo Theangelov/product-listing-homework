@@ -22,7 +22,9 @@ a {
     padding: 0 70px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    opacity: 1;
+    transition: opacity 3s;    
 }
 
 .container p {
@@ -31,7 +33,8 @@ a {
     color: #5C5856;
 }
 
-h3 {
+
+.container h3 {
     font-size: 42px;
     color: #222;
 }
@@ -49,18 +52,21 @@ h3 {
     max-height: 529.33px;
     max-width: 361.33px;
     border: 1px solid rgba(0,0,0,0);
+    transition: border 0.6s;
+    transition: transform 0.4s;    
 }
 
 .item:hover {
-    transition: border 0.6s;
-    border: 1px solid #bbb;
-    
+    border: 1px solid #bbb; 
 }
 
-.image img {
+.item:hover > .image {
+    transform: scale(1.1);
+}
+
+.image {
     height: 301.33px;
 }
-
 
 .item-name-and-weight {
     font-family: "Casper", sans-serif;
